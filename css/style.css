@@ -24,7 +24,7 @@ h3 {
   font-size: 30px;
   color: #8B5C00;
   font-weight: 600;
-  
+
   text-align: center;
 }
 
@@ -45,6 +45,7 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
   /* margin-bottom: 20px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   /* z-index: -2;
   position: relative; */
@@ -82,8 +83,8 @@ header li {
   /* height: 80px; */
 }
 
-.nav_list li a:hover{
-  color:#DE5000;
+.nav_list li a:hover {
+  color: #DE5000;
 }
 
 header i {
@@ -100,7 +101,7 @@ header i {
   padding: 10px 20px;
   height: 20px;
   margin: 20px 0px;
-  
+
 
 }
 
@@ -111,14 +112,14 @@ header i {
   margin-top: 5px;
   margin-bottom: 50px;
 
-} 
+}
 
 
-.swiper-slide{
+.swiper-slide {
   font-size: 30px;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   width: 100%;
   height: 100%;
 }
@@ -136,13 +137,14 @@ header i {
 
 /* ---------quicktrade-------- */
 
-.homepage-main{
-  height: 3400px;
+.homepage-main {
+  height: 3200px;
   position: relative;
 }
 
 .tra-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 90px;
 }
@@ -188,7 +190,7 @@ header i {
   border: 1px solid rgba(188, 185, 172, 0.13);
   border-radius: 20px 20px 0px 0px;
   cursor: pointer;
-  
+
 
 }
 
@@ -202,7 +204,7 @@ header i {
   border: 1px solid rgba(188, 185, 172, 0.13);
   border-radius: 20px 20px 0px 0px;
   cursor: pointer;
-  
+
 
 }
 
@@ -212,30 +214,30 @@ header i {
   margin: 10px 0;
 }
 
-.q-trade-block select{
+.q-trade-block select {
   background: #F3F1F1;
   border: 1px solid rgba(188, 185, 172, 0.13);
   box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  height:35px;
-  width:150px;
+  height: 35px;
+  width: 150px;
   margin-right: 10px;
   margin-bottom: 20px;
-  font-family: Poppins,arial;
+  font-family: Poppins, arial;
 }
 
-.q-tra-num{
+.q-tra-num {
   background: #F3F1F1;
   border: 1px solid rgba(188, 185, 172, 0.13);
   box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  height:35px;
+  height: 35px;
   width: 175px;
   box-sizing: border-box;
-  font-family: Poppins,arial;
+  font-family: Poppins, arial;
 }
 
-.q-tra-con-btn{
+.q-tra-con-btn {
   display: block;
   color: white;
   margin: 30px auto 10px;
@@ -248,7 +250,7 @@ header i {
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 
 }
 
@@ -263,35 +265,39 @@ header i {
   background-image: url('../img/BG01.svg');
   position: relative;
   background-size: contain;
-  /* background-repeat: no-repeat; */
-  min-height: 900px;
+  background-repeat: repeat-x;
+  /* min-height: 900px; */
   /* height: 50vw; */
   z-index: 0;
-
 }
+
+
 
 .section1-2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-
 }
+
+
+
 
 .section1 h3 {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 110px;
 }
 
 .section1 img {
   display: block;
-  width: 400px;
+  width: 350px;
+  padding-bottom: 120px;
 }
 
 .section1 p {
   font-size: 20px;
-
   width: 450px;
   line-height: 1.6;
-  margin: 130px 0px 0px 30px;
+  margin: 80px 0px 0px 30px;
   color: #8B5C00;
 
 }
@@ -312,18 +318,22 @@ header i {
   text-align: center;
   padding-top: 200px;
   margin-bottom: 50px;
+  z-index: -2;
 
 }
 
 .section2 ul {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .section2 li {
-  margin: 0 60px;
+  /* margin: 0 60px; */
+
 
 }
+
 
 .section2 p {
   font-size: 18px;
@@ -334,7 +344,9 @@ header i {
 }
 
 .section2 img {
-  width: 300px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -352,6 +364,7 @@ header i {
 
 .section3 ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -447,7 +460,7 @@ header i {
 }
 
 
-.btn-des{
+.btn-des {
   display: block;
   color: #ffffff;
   background-color: transparent;
@@ -463,7 +476,7 @@ header i {
   height: 60px;
   margin-bottom: 60px;
 
-  
+
 }
 
 
@@ -488,54 +501,55 @@ footer {
 
 }
 
-.col{
+.col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-right: 100px;
 
 }
-.col h5{
+
+.col h5 {
   font-size: 18px;
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 20px;
-  font-family:Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
-.col a{
+.col a {
   font-size: 14px;
   color: #ffffff;
   font-weight: 400;
   margin-bottom: 15px;
-  font-family:Microsoft JhengHei;
+  font-family: Microsoft JhengHei;
 }
 
-.col p{
+.col p {
   font-size: 14px;
   color: #ffffff;
   font-weight: 400;
   margin-bottom: 15px;
-  font-family:Microsoft JhengHei;
+  font-family: Microsoft JhengHei;
 }
 
-.col img{
+.col img {
   width: 200px;
   margin-bottom: 20px;
 }
 
-.col-last{
+.col-last {
   margin-left: 100px;
   margin-right: 0;
 }
 
-.sns i{
+.sns i {
   color: #ffff;
   font-size: 20px;
   margin-right: 10px;
 }
 
-footer>p{
+footer>p {
   color: #ffff;
   font-size: 12px;
   text-align: center;
@@ -544,7 +558,7 @@ footer>p{
 
 }
 
-footer>p>a{
+footer>p>a {
   color: #ffff;
   text-decoration: underline;
 
@@ -622,8 +636,20 @@ footer>p>a{
 }
 
 .trade-table tr>th:nth-child(3) {
-  color: white;
+  /* color: white; */
 }
+
+
+svg{
+  position: relative;
+  left:85%;
+  top: 15%;
+  transform: translateX(-50%);
+
+}
+
+
+
 
 .trade-table td {
   border-bottom: 1px solid #CFCFCF;
@@ -655,6 +681,12 @@ footer>p>a{
   color: #8E8E8E;
 }
 
+
+.trade-table tr>th:nth-child(3) {
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
 .trade-table tr>th:nth-child(2) {
   width: 200px;
   text-align: right;
@@ -675,7 +707,7 @@ footer>p>a{
 
 .trade-table-btn-exchange {
   text-align: center;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
 .trade-table-change {
@@ -697,7 +729,7 @@ footer>p>a{
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 
 }
 
@@ -824,7 +856,7 @@ footer>p>a{
   padding: 0;
   margin-bottom: 30px;
   margin-left: 20px;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 
 }
 
@@ -833,7 +865,7 @@ footer>p>a{
   text-align: center;
   width: 150px;
   color: #656363;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
 .buyin-form-crypto>input {
@@ -841,7 +873,7 @@ footer>p>a{
   font-size: 18px;
   width: 400px;
   text-align: right;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
 .buyin-form-currency>input {
@@ -850,7 +882,7 @@ footer>p>a{
   width: 400px;
   padding: 0 20px;
   text-align: right;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
 /* --------Trade- Payment Option--------- */
@@ -939,7 +971,7 @@ footer>p>a{
 
   padding: 10px 20px;
 
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
   background: #F9C304;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -960,18 +992,19 @@ footer>p>a{
   background-image: url("../img/Group\ 23333.svg");
   background-position: contain;
   background-repeat: repeat-x;
+  padding: 0 300px;
 
-  
-  
+
+
 }
 
 .order-inf {
   background: #FFFFFF;
-  margin: 0 300px;
+  /* margin: 0 100px; */
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 30px 100px;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
   margin-bottom: 100px;
 
 }
@@ -984,6 +1017,7 @@ footer>p>a{
 
 .order-inf-item {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
   justify-content: space-between;
 }
@@ -1024,7 +1058,7 @@ footer>p>a{
   /* margin-right: 5px; */
 }
 
-.order-inf-price-title{
+.order-inf-price-title {
   display: flex;
   font-size: 18px;
   justify-content: space-between;
@@ -1034,51 +1068,51 @@ footer>p>a{
 
 }
 
-.order-inf-price-title p:nth-child(1){
+.order-inf-price-title p:nth-child(1) {
   font-size: 15px;
-  color:  #656363;
+  color: #656363;
   margin-left: 10px;
 }
 
-.order-inf-price-title p:nth-child(2){
+.order-inf-price-title p:nth-child(2) {
   font-size: 20px;
-  color:  #656363;
+  color: #656363;
   margin-right: 10px;
   font-weight: 600;
 }
 
 
-.order-inf-table{
+.order-inf-table {
   font-size: 20px;
-  color:  #656363;
+  color: #656363;
   margin-left: auto;
   text-align: right;
   /* border: 1px solid black; */
 
 }
 
-.order-inf-table tr{
+.order-inf-table tr {
   height: 40px;
-  
+
 
 }
 
-.order-inf-table tr:nth-child(3){
+.order-inf-table tr:nth-child(3) {
   font-weight: 600;
 }
 
-.order-inf-table td:nth-child(2){
+.order-inf-table td:nth-child(2) {
   width: 180px;
 }
 
-.exchange-order-btn1{
+.exchange-order-btn1 {
   display: block;
   color: white;
-  
+
   font-size: 20px;
   font-weight: 600;
-  
-  margin:30px 0 30px auto;
+
+  margin: 30px 0 30px auto;
   padding: 10px 25px;
 
   background: #F9C304;
@@ -1086,16 +1120,16 @@ footer>p>a{
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
-.order-inf-price a{
+.order-inf-price a {
   font-size: 15px;
-  text-decoration:underline;
-  color:#716E6E;
+  text-decoration: underline;
+  color: #716E6E;
   display: block;
   text-align: right;
-  
+
 }
 
 /* ---------Order compeleted--------- */
@@ -1105,6 +1139,7 @@ footer>p>a{
   background-position: contain;
   background-repeat: repeat-x;
   height: auto;
+  padding: 0 300px;
   /* padding-top: 160px; */
 }
 
@@ -1114,22 +1149,22 @@ footer>p>a{
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 30px 100px;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
   margin-bottom: 100px;
 }
 
-.order-com h3{
+.order-com h3 {
   padding-top: 80px;
   margin-bottom: 50px;
   letter-spacing: normal;
 }
 
-.order-com-btn1{
+.order-com-btn1 {
   display: block;
   color: white;
   font-size: 20px;
   font-weight: 600;
-  
+
   width: 220px;
   margin: 30px auto;
   padding: 10px 30px;
@@ -1139,16 +1174,16 @@ footer>p>a{
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 
 }
 
-.order-com-btn2{
+.order-com-btn2 {
   display: block;
-  color:#F9C304;
+  color: #F9C304;
   font-size: 20px;
   font-weight: 500;
-  
+
   width: 220px;
   margin: 30px auto;
   padding: 10px 30px;
@@ -1157,7 +1192,7 @@ footer>p>a{
   border: 2px solid #EEC535;
   border-radius: 50px;
   cursor: pointer;
-  font-family: Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 
 }
 
@@ -1176,100 +1211,104 @@ footer>p>a{
   padding: 0 200px;
 }
 
-.news h3{
+.news h3 {
   padding-top: 80px;
   margin-bottom: 50px;
   letter-spacing: normal;
 }
-.main-news{
+
+.main-news {
   font-size: 20px;
   margin: 100px auto 50px;
   display: flex;
   justify-content: center;
-  font-family:Microsoft JhengHei,Arial;
+  font-family: Microsoft JhengHei, Arial;
 }
 
-.main-news-img{
+.main-news-img {
   /* width:45%*/
   /* min-width:300px; */
   /* margin-right: 50px; */
 
 }
 
-.main-news-img img{
+.main-news-img img {
   display: block;
   max-width: 100%;
- 
+
   border-radius: 10px;
 }
 
-.news-text{
+.news-text {
   width: 600px;
   margin-left: 50px;
 }
 
-.news-text p{
+.news-text p {
   color: #656363;
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-.news-text h5{
+.news-text h5 {
   font-size: 25px;
   margin-bottom: 15px;
-  font-family: Poppins,arial;
+  font-family: Poppins, arial;
 }
-.news-text a{
+
+.news-text a {
 
   color: black;
 }
 
-.mid-news{
-  display:flex;
-  margin:0 -10px 50px;
+.mid-news {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 50px;
   justify-content: center;
   position: relative;
   padding-bottom: 70px;
   border-bottom: 1px dashed #d1a713;
 }
 
- .mid-news-block{
+.mid-news-block {
   /* width:70%; */
   /* height: 200px; */
   /* display: inline-block; */
   margin: 0 10px;
 }
 
-.mid-news-img img{
+.mid-news-img img {
   /* width:90%; */
   display: block;
   max-width: 100%;
   border-radius: 10px;
-  margin: 0 auto 15px; 
+  margin: 0 auto 15px;
 }
 
-.mid-news-block p{
+.mid-news-block p {
   font-size: 15px;
-  color:#656363;
+  color: #656363;
   margin-bottom: 15px;
 }
 
-.mid-news-block h5{
+.mid-news-block h5 {
   font-size: 20px;
   width: 335px;
- 
+
 }
 
-.mid-news-block a{
-  color:black;
+.mid-news-block a {
+  color: black;
 }
-.allnews h5{
+
+.allnews h5 {
   font-size: 28px;
-  color:#9F7D05;
+  color: #9F7D05;
   margin-bottom: 20px;
 }
 
-.allnews-block{
+.allnews-block {
   background: rgba(252, 252, 252, 0.8);
   border-bottom: 1px solid #cb9f00;
   display: flex;
@@ -1278,25 +1317,25 @@ footer>p>a{
   cursor: pointer;
 }
 
-.allnews-block:hover{
-  background-color:#eeeeee;
+.allnews-block:hover {
+  background-color: #eeeeee;
 }
 
-.allnews-block h6{
+.allnews-block h6 {
   font-size: 20px;
   line-height: 60px;
   padding-left: 15px;
   overflow: hidden;
 }
 
-.allnews-block p{
+.allnews-block p {
   font-size: 15px;
   padding-right: 10px;
   line-height: 60px;
-  color: #656363; 
+  color: #656363;
 }
 
-.allnews button{
+.allnews button {
   color: #EEC535;
   background: #FFFFFF;
   border: 2px solid #EEC535;
@@ -1309,12 +1348,12 @@ footer>p>a{
   display: block;
   margin: 50px auto;
   cursor: pointer;
-  
+
 }
 
 /* ------------tutorial----------- */
 
-.tutorial{
+.tutorial {
   /* background-image: url("../img/Group\ 23333.svg");
   background-position: cover;
   background-repeat: repeat-x; */
@@ -1326,11 +1365,11 @@ footer>p>a{
   background-repeat: repeat-x;
 
 
-  
+
   /* padding-top: 160px; */
 }
 
-.tutorial h3{
+.tutorial h3 {
 
   padding-top: 100px;
   margin-bottom: 50px;
@@ -1338,71 +1377,72 @@ footer>p>a{
 
 }
 
-.tutor_creat h6{
-  font-size:20px;
-  color:#656363;
+.tutor_creat h6 {
+  font-size: 20px;
+  color: #656363;
   text-align: center;
   font-weight: 400;
   margin: 0 auto 50px;
 }
 
-.allstep{
+.allstep {
   display: flex;
   justify-content: space-evenly;
   position: relative;
   margin-bottom: 30px;
 }
 
-.allstep img{
+.allstep img {
   display: block;
   width: 130px;
   margin: 0 auto 20px;
 }
 
-.allstep p{
+.allstep p {
   font-size: 18px;
   width: 230px;
-  color:#9F7D05;
+  color: #9F7D05;
   font-weight: 500;
   text-align: center;
   line-height: 30px;
 }
 
-.tutor_creat::before{
-  content: url(../img/Line_10.png); 
+.tutor_creat::before {
+  content: url(../img/Line_10.png);
   position: relative;
   display: inline-block;
   transform: scale(.6);
-  left:240px;
+  left: 240px;
   top: 125px;
 
 }
 
-.tutor_creat::after{
-  content: url(../img/Line_10.png); 
+.tutor_creat::after {
+  content: url(../img/Line_10.png);
   position: relative;
   display: inline-block;
   transform: scale(.6);
-  left:550px;
+  left: 550px;
   top: -190px;
 
 }
 
 
 
-.faq h3{
-  margin: 50px 0; 
+.faq h3 {
+  margin: 50px 0;
 }
 
-.faq-block{
+.faq-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
-.faq-block a{
+
+.faq-block a {
   box-sizing: content-box;
-  margin:10px 30px ;
+  margin: 10px 30px;
 
 }
 
@@ -1410,25 +1450,25 @@ footer>p>a{
 
   background-color: #ffffff;
   border-radius: 20px;
-  width:250px;
+  width: 250px;
   padding: 30px 0 40px;
 }
 
-.faq-block-type p{
-  font-size:18px;
-  color:#765D05;
+.faq-block-type p {
+  font-size: 18px;
+  color: #765D05;
   text-align: center;
 }
 
 
-.faq-block-type i{
+.faq-block-type i {
   font-size: 50px;
   color: #D5682B;
   display: block;
-  margin: 0 100px 20px; 
+  margin: 0 100px 20px;
 }
 
-.faq-contact{
+.faq-contact {
 
   width: 650px;
   background-color: #ffffff;
@@ -1440,14 +1480,14 @@ footer>p>a{
   justify-content: space-between;
 }
 
-.faq-contact p{
+.faq-contact p {
   font-size: 20px;
-  color:#765D05;
+  color: #765D05;
   line-height: 60px;
- 
+
 }
 
-.faq-contact a{
+.faq-contact a {
   font-size: 20px;
   color: #ffffff;
   background-color: #DE5000;
@@ -1458,7 +1498,7 @@ footer>p>a{
 
 /* ------------contact us----------- */
 
-.contact-us{
+.contact-us {
   background-image: url("../img/Group\ 23333.svg");
   background-position: 0 -170px;
   background-repeat: repeat-x;
@@ -1466,13 +1506,13 @@ footer>p>a{
   padding: 0 200px;
 }
 
-.contact-us h3{
+.contact-us h3 {
   padding-top: 100px;
   margin-bottom: 50px;
   letter-spacing: normal;
 }
 
-.contact-us>p{
+.contact-us>p {
   font-size: 20px;
   font-weight: 400;
   color: #656363;
@@ -1481,31 +1521,31 @@ footer>p>a{
 
 }
 
-.contact-all{
+.contact-all {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.con-form{
+.con-form {
   padding: 30px 30px 0 0;
 
   /* padding-top: 30px; */
   /* padding-left: 20px; */
-  border-right:1px dashed #9F7D05;
+  border-right: 1px dashed #9F7D05;
   width: 520px;
 }
 
 
 
-.con-form p{
+.con-form p {
   color: black;
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-.con-form input{
+.con-form input {
   background: #fffefe;
   border: 1px solid rgba(188, 185, 172, 0.4);
   border-radius: 5px;
@@ -1516,54 +1556,55 @@ footer>p>a{
   margin-bottom: 20px;
 }
 
-.con-form form input:last-child{
+.con-form form input:last-child {
   background: none;
-  border:none;
+  border: none;
 
 }
 
-.con-form .des{
+.con-form .des {
   height: 200px;
   line-height: normal;
-  overflow:scroll;
-  overflow-X:hidden;  
+  overflow: scroll;
+  overflow-X: hidden;
 }
 
-.con-form button{
+.con-form button {
   color: #ffffff;
   background: #DE5000;
   border: none;
   border-radius: 5px;
 
   font-size: 15px;
-  padding:10px 30px;
+  padding: 10px 30px;
   display: block;
   margin: 20px auto;
   cursor: pointer;
 }
-.con-inf{
+
+.con-inf {
   padding-top: 60px;
 }
 
-.con-inf-block{
+.con-inf-block {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   width: 520px;
 }
 
-.con-inf h5{
+.con-inf h5 {
   font-size: 15px;
   font-weight: 500;
 
   text-align: right;
-  width:200px;
+  width: 200px;
   margin-right: 30px;
   line-height: 1.25;
   color: black;
 }
 
-.con-inf p{
+.con-inf p {
   font-size: 15px;
   width: 300px;
   color: black;
@@ -1571,16 +1612,16 @@ footer>p>a{
   line-height: 1.25;
 }
 
-.con-inf-block:last-child{
+.con-inf-block:last-child {
   width: 400px;
   height: 200px;
   margin-left: 100px;
 }
 
-.con-inf-block>iframe{
-  width:400px;
-  height:200px;
-  border:0;
-  justify-content:right;
+.con-inf-block>iframe {
+  width: 400px;
+  height: 200px;
+  border: 0;
+  justify-content: right;
 
 }
