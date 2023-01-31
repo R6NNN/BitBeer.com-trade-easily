@@ -1,5 +1,8 @@
 @import url('reset.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap');
+
+
 body {
   width: 100%;
   background-image: url('../img/grey.png');
@@ -1005,9 +1008,6 @@ svg{
   background-position: contain;
   background-repeat: repeat-x;
   padding: 0 300px;
-
-
-
 }
 
 .order-inf {
@@ -1018,7 +1018,6 @@ svg{
   padding: 30px 100px;
   font-family: Microsoft JhengHei, Arial;
   margin-bottom: 100px;
-
 }
 
 .exchange-order h3 {
@@ -1141,8 +1140,12 @@ svg{
   color: #716E6E;
   display: block;
   text-align: right;
+}
+
+.pop-order-check{
 
 }
+
 
 /* ---------Order compeleted--------- */
 
