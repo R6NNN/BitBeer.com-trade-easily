@@ -7,20 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <title>BitBeer - Exchange Order</title>
+  <title>BitBeer - Login</title>
 </head>
 
 <body>
 
- 
+ <!-- <div class="wrapper"> -->
     <!-- --------header-------- -->
     <header>
+
       <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
       </a>
       <nav>
           <ul class="nav_list">
-              <li >
-                  <a class="btn-strong" href="Trade.html">Trade</a>
+              <li>
+                  <a href="Trade.html">Trade</a>
               </li>
               <li>
                   <a href="News.html">News</a>
@@ -32,70 +33,38 @@
                   <a href="Contact-us.html">Contact us</a>
               </li>
 
-                <!-- <a  class="btn-login" href="#">Login</a> -->
-              <a href=""><i class="fa-solid fa-user"></i></a>
-              <a href=""><i class="fa-solid fa-gear"></i></a>
+              <a  class="btn-login" href="Login.html">Login</a>
               
           </ul>
       </nav>
-  </header>
+    </header>
 
-     <!-- --------main-------- -->
-    <main class="exchange-order">
-
-        <h3>Exchange Order - Buy in</h3>
-        <div class="order-inf">
-          <div class="order-inf-item">
-            <div class="order-inf-item-type">
-              <img src="img/ETH.svg" alt=""><h5 class="buyin-inf-h5">Ethereum - ETH  </h5>
-            </div>
-            <p>1.13</p>
-          </div>
-          <div class="order-inf-price">
-            <p>1ETH ≈ USD＄ 1,451.8</p>
-            <div class="order-inf-price-title">
-              <p>Payment Option</p>
-              <p><img src="img/wallet.svg" alt=""> Wallet</p>
-            </div>
-            <table class="order-inf-table">
-              <tr>
-                <td>ETH Price: USD$</td>
-                <td>1,451.8</td>
-              </tr>
-              <tr>
-                <td>Fee:  USD$</td>
-                <td>0.5</td>
-              </tr>
-              <tr>
-                <td>Total Pay: USD$</td>
-                <td>1,452.3</td>
-              </tr>
-            </table>
-            <button id="traConfirm" class="exchange-order-btn1">Confirm</button>
-            <a href="Trade-Buy.html">Back to previous step</a>
-
-          </div>
-        </div>
-
-        <!-- --------dialog-------- -->
-        <dialog id="confirmPop" >
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <p>Dear user, <br> If you confirmed this exchange,<br> <span>it wouldn't be cancel.</span>
-          </p>
-
-          <button  type="button" onclick="location.href='Order-Completed.html'" >Confirm, and next</button>
-          <a href="Exchange-Order.html">back to previous step</a>
-        </dialog>
-     
-    </main>
+<!-- ----------------main--------------- -->
+<div class="login-bg2">
+  <main class="login">
+    <a href=""></a>
+    <a href=""></a>
+    <div class="login-block">
+      <img src="img/Group 59 (2)拷貝.png" alt="">
+      <h3>Login</h3>
+      <form action="">
+      <div class="login-list">
+        <h5>Email</h5>
+        <input type="text" name="account_eamil">
+        <h5>Password</h5>
+        <input type="text" name="account_password">
+        <a class="login-forgot" href="#"><p class="login-forgot">Forgot Password?</p></a>
+        <a class="login-btn-con" href="#">Login</a>
+        <p class="login-create">No Account? <a href="#">Create it</a></p>
+   </div>
+    </form>
+    </div>
 
 
-     
-
-
-
-
-<!-- --------footer-------- -->
+  
+  </main>
+</div>
+<!----------------- footer---------------- -->
 
 <footer>
   <div class="footer-flex-block">
@@ -153,15 +122,12 @@
 
 </footer>
 
-
-
- 
+<!-- </div> -->
 
 
 
 
 
-<script src="js/index.js"></script>
 
 </body>
 
