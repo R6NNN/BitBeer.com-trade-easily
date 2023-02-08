@@ -1758,18 +1758,39 @@ input[type="search"]:focus {
   background-color: #FFFFFF;
   margin: 50px auto;
   border-radius: 10px;
-  overflow: scroll;
+  overflow-y:scroll;
 }
 
 .pop-sec i{
   font-size: 35px;
   color:#47443A;
-  float: right;
+  right:210px;
+  margin-bottom: 20px;
+  position: fixed;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  color: #47443A;
+
+  }
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  margin:0 0 2px 0;
+  /* color: #47443A; */
+ 
+  }
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #d6d6d6;
+
+  }
 
 
-/* .get-sta-inf{
+.get-sta-inf{
   width: 900px;
   margin: 0 auto;
 
@@ -1782,10 +1803,10 @@ input[type="search"]:focus {
   text-align: center;
   margin: 20px 0px 40px;
   
-} */
+}
 
 /* =========================== */
-/* .allstep {
+.allstep {
   display: flex;
   justify-content: space-evenly;
   position: relative;
@@ -1805,7 +1826,7 @@ input[type="search"]:focus {
   font-weight: 400;
   text-align: center;
   line-height: 30px;
-} */
+}
 /* ============================ */
 
 
@@ -1901,7 +1922,7 @@ input[type="search"]:focus {
 .faq-contact p {
   font-size: 20px;
   color: #765D05;
-  line-height: 60px;
+  line-height: 50px;
 
 }
 
@@ -1910,7 +1931,10 @@ input[type="search"]:focus {
   color: #ffffff;
   background-color: #DE5000;
   border-radius: 10px;
-  padding: 10px 10px;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
 
 

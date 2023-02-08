@@ -47,6 +47,7 @@ let faqOff = document.getElementById("faq-sec-off");
 
   faqOff.addEventListener("click",function(){
     faqPop.style.display = "none";
+    overflow.style.overflow = "scroll";
 
   })
 
