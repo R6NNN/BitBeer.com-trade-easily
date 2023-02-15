@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  
+  <title>BitBeer - Wallent</title>
+</head>
+
+<body>
+
+ 
+    <!-- --------header-------- -->
+    <header>
+      <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
+      </a>
+      <nav>
+          <ul class="nav_list">
+              <li>
+                  <a href="Trade.html">Trade</a>
+              </li>
+              <li>
+                  <a href="News.html">News</a>
+              </li>
+              <li>
+                  <a href="Tutorial.html">Tutorial</a>
+              </li>
+              <li>
+                  <a href="Contact-us.html">Contact us</a>
+              </li>
+
+              <!-- <a  class="btn-login" href="Login.html">Login</a> -->
+              <a href="" class="btn-strong"><i class="fa-solid fa-user"></i></a>
+              <a href=""><i class="fa-solid fa-gear"></i></a>
+              
+          </ul>
+      </nav>
+  </header>
+
+<!-- ----------------main--------------- -->
+  <main class="wallet">
+    <div class="wallet-sec">
+      <h3>My Wallet</h3>
+      <div class="donutchart">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="chart-num  chart-pos-mid" data-aos="flip-down" data-aos-delay="800" data-aos-duration="500"  data-aos-once="true">
+        Total<br>
+        $ 2,202.8
+      </div>
+      <div class="chart-num  chart-pos-1" data-aos="flip-down" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
+        <i class="fa-solid fa-beer-mug-empty"></i>
+        66% <br>Ethereum / ETH
+      </div>
+      <div class="chart-num  chart-pos-2" data-aos="flip-down" data-aos-delay="400" data-aos-duration="500" data-aos-once="true">
+        <i class="fa-solid fa-beer-mug-empty"></i>
+        20% <br>USD
+      </div>
+      <div class="chart-num  chart-pos-3" data-aos="flip-down" data-aos-delay="600" data-aos-duration="500" data-aos-once="true">
+        <i class="fa-solid fa-beer-mug-empty"></i>
+        14% <br>Tether / USDT
+      </div>
+
+      <div class="detail-assets">
+        <h3>Detail Assets</h3>
+        <table>
+          <tr class="detail-head">
+            <th>Type</th>
+            <th>Number/ Price</th>
+            <th>Diviend</th>
+            <th>Average cost</th>
+            <th></th>
+          </tr>
+
+
+          <tr class="detail-table-usd ">
+            <td class="detail-table-type ">
+              <img src="img/united-states-flag-icon.svg" alt="">
+              USD
+            </td>
+            <td class="detail-table-num">$451.8</td>
+            <td class="detail-table-div">----</td>
+            <td class="detail-table-cost">----</td>
+            <td class="detail-table-bt bt-g"><button>Payment</button></td>
+            <td class="detail-table-bt bt-r"><button>Withdraw</button></td>
+
+          </tr>
+
+          <tr class="detail-table-eth ">
+            <td class="detail-table-type">
+              <img src="img/ETH.svg" alt="">
+              Ethereum
+              <p>ETH</p>
+            </td>
+            <td class="detail-table-num">1.13  ETH</td>
+            <td class="detail-table-div">+4.15%</td>
+            <td class="detail-table-cost">$1,451.8</td>
+            <td class="detail-table-bt bt-g"><button>Receive</button> </td>
+            <td class="detail-table-bt bt-r"><button>Send</button></td>
+          </tr>
+
+          <tr class="detail-table-usdt ">
+            <td class="detail-table-type">
+              <img src="img/USDT.svg" alt="">
+              Tether
+              <p>USDT</p>
+            </td>
+            <td class="detail-table-num">300  USDT</td>
+            <td class="detail-table-div">+0.01%</td>
+            <td class="detail-table-cost">$306</td>
+            <td class="detail-table-bt bt-g"><button>Receive</button> </td>
+            <td class="detail-table-bt bt-r"><button>Send</button></td>
+          </tr>
+
+
+        </table>
+
+
+      </div>
+
+
+    </div>
+  </main>
+
+<!----------------- footer---------------- -->
+
+<footer>
+  <div class="footer-flex-block">
+    <div class="col">
+        <h5>BitBeer</h5>
+        <a href="#">About BitBeer</a>
+        <a href="#">Privacy and Security</a>
+        <a href="#">Term of Use</a>
+        <a href="#">Recruit</a>
+    </div>
+    <div class="col">
+        <h5>Product</h5>
+        <a href="#">Trade</a>
+        <a href="#">Regular quota</a>
+        <a href="#">OTC</a>
+    </div>
+
+    <div class="col">
+        <h5>Information</h5>
+        <a href="#">Limits</a>
+        <a href="#">Fees</a>
+        <a href="#">News</a>
+        <a href="#">Support</a>
+    </div>
+  
+  <div class="col-last col" >
+      <img src="img/Logo.svg" alt="">
+      <p>© 2023 BitBeer.com All rights reserved.</p>
+
+      <a href="#">service@bitbeer.com</a>
+      <p>＋886-2-1234-5678</p>
+      <p>Mon. - Sun.<br>
+      10:00am ~ 5:00pm & 6:00pm ~ 8:00pm</p>
+
+      <div class="sns">
+          <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+              <i class="fa-brands fa-telegram"></i>
+          </a> 
+      </div>
+
+  </div>
+</div>
+    <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。
+        <a href="https://docs.google.com/document/d/1gEIF5ixvouD6b4plLIe0pAvlUmwfSMIOnqsfGZUodCo/edit">參考資料</a>
+    </p>
+
+</footer>
+
+
+
+ 
+<script src="./js/wallent.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+        AOS.init();
+</script>
+
+
+
+
+</body>
+
+</html>
