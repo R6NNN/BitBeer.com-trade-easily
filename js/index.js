@@ -18,18 +18,7 @@
 // })
 
 
-//-------Exchange order-dialog------------
-
-// let btn1 = document.querySelector("#traConfirm");
-// let confirmPop = document.querySelector("#confirmPop");
-// let overflow = document.querySelector("body");
-// btn1.addEventListener("click", function(){
-
-//     overflow.style.overflow = "hidden";
-//     confirmPop.showModal();
-//   })
-
-//----------------FAQ-popup------------
+// ----------------FAQ-popup------------
 
 // 點選出現 #faq-pop (display=block)
 // 點選 #faq-sec-off  #faq-pop(display = none)
@@ -104,5 +93,12 @@ $(document).ready(function () {
       // 讓瀏覽器知道有點擊 .burgar_btn 的時候，會有收合功能，並在 body 產生一個新的 Class 名稱 burgar_btn-show
   });
 });
+
+// $(document).mouseup(function(e) {
+//   var _con = $('header ul'); // 就是你不希望被點到的 div
+//   if (!_con.is(e.target) && _con.has(e.target).length === 0 ) {
+//       $('header ul').removeClass('burgar_btn-show'); // 功能代碼
+//   }
+// });
 
 

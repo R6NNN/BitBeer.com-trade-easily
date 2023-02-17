@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/rwd.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jquery-3.6.3.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>BitBeer - Tutorial</title>
 </head>
@@ -15,9 +18,17 @@
  
     <!-- --------header-------- -->
     <header>
+        
       <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
       </a>
-      <nav>
+      <!----- RWD ham----->
+      <div class="rwd-ham">
+        <a href="Wallet.html"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-bars ham-btn"></i>
+      </div>
+      
+    
+      <!-- <nav> -->
           <ul class="nav_list">
               <li>
                   <a href="Trade.html">Trade</a>
@@ -26,16 +37,16 @@
                   <a href="News.html">News</a>
               </li>
               <li>
-                  <a class="btn-strong" href="Tutorial.html">Tutorial</a>
+                  <a href="Tutorial.html">Tutorial</a>
               </li>
               <li>
                   <a href="Contact-us.html">Contact us</a>
               </li>
-
-              <a  class="btn-login" href="Login.html">Login</a>
-              
+  
+              <a class="btn-login" href="Login.html">Login</a>
+  
           </ul>
-      </nav>
+      <!-- </nav> -->
   </header>
 
 <!-- ----------------main--------------- -->
@@ -120,6 +131,16 @@
                     <div class="get-sta-inf-block-inf">
                       <p> If you lose the password, please click "Reset Password" at the page of sign in.</p>
                     </div>
+
+                    <div class="get-sta-inf-block">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>How come my password isn't working? </p>
+                    </div>
+                    <div class="get-sta-inf-block-inf">
+                      <p> If you lose the password, please click "Reset Password" at the page of sign in.</p>
+                    </div>
+
+                    
 
 
 
@@ -256,6 +277,7 @@
 
 
  <script src="./js/index.js"></script>
+ <script src="./js/tutorial.js"></script>
 
 </body>
 

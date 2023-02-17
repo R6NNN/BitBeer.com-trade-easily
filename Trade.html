@@ -2,9 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/rwd.css" rel="stylesheet" type="text/css" />
+  <script src="./js/jquery-3.6.3.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
   <title>BitBeer - Trade</title>
 </head>
 
@@ -12,12 +15,20 @@
   <div class="wrapper">
   <!-- --------header-------- -->
   <header>
+        
     <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
     </a>
-    <nav>
+    <!----- RWD ham----->
+    <div class="rwd-ham">
+      <a href="Wallet.html"><i class="fa-solid fa-user"></i></a>
+      <i class="fa-solid fa-bars ham-btn"></i>
+    </div>
+    
+  
+    <!-- <nav> -->
         <ul class="nav_list">
             <li>
-                <a class="btn-strong" href="Trade.html">Trade</a>
+                <a href="Trade.html">Trade</a>
             </li>
             <li>
                 <a href="News.html">News</a>
@@ -29,10 +40,10 @@
                 <a href="Contact-us.html">Contact us</a>
             </li>
 
-            <a  class="btn-login" href="Login.html">Login</a>
-            
+            <a class="btn-login" href="Login.html">Login</a>
+
         </ul>
-    </nav>
+    <!-- </nav> -->
 </header>
 
 <main class="trade">
@@ -73,6 +84,21 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/BTC .svg" alt="">Bitcoin<p>BTC</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>-0.37%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$17,182.00</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
     <tr class="table-eth">
       <td class="trade-table-name">
@@ -85,6 +111,21 @@
       <td class="trade-table-btn-exchange">
         <button onclick="window.location.href='Trade-Buy.html'">BUY</button>
         <button>SELL</button>
+      </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/ETH.svg" alt="">Ethereum<p>ETH</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>+4.65%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$1,284.78</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button onclick="window.location.href='Trade-Buy.html'">BUY</button>
+          <button>SELL</button>
+        </div>
       </td>
     </tr>
     <tr class="table-doge">
@@ -101,6 +142,21 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/doge.svg" alt="">Dogecoin<p>DOGE</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>+1.77%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$0.07256</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button >BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
 
     <tr class="table-budt">
@@ -114,6 +170,22 @@
       <td class="trade-table-btn-exchange">
         <button>BUY</button>
         <button>SELL</button>
+      </td>
+      
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/USDT.svg" alt="">Tether<p>USDT</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>-0.16%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$1.02</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
       </td>
     </tr>
 
@@ -129,7 +201,23 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/USDC.svg" alt="">USD Coin<p>USDC</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>+1.5%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$1.00</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
+
     <tr class="table-busd">
       <td class="trade-table-name">
         <img src="img/BUSD.svg" alt="">Binance USD <p>BUSD</p></td>
@@ -142,6 +230,22 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/BUSD.svg" alt="">Binance USD <p>BUSD</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>-0.25%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$1.00</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
+
     </tr>
     <tr class="table-bnb">
       <td class="trade-table-name">
@@ -153,7 +257,23 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/BNB.svg" alt="">Binace<p>BNB</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>-0.21%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$267.17</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
+
     <tr class="table-sol">
       <td class="trade-table-name">
         <img src="img/SOL.svg" alt="">Solana<p>SOL</p></td>
@@ -166,7 +286,23 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/SOL.svg" alt="">Solana<p>SOL</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>+1.5%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$14.22</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
+
     <tr class="table-uni">
       <td class="trade-table-name">
         <img src="img/UNI 1.svg" alt="">Uniswap<p>UNI</p></td>
@@ -179,7 +315,23 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/UNI 1.svg" alt="">Uniswap<p>UNI</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>-0.69%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$5.56</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
+
     <tr class="table-xrp">
       <td class="trade-table-name">
         <img src="img/XRP.svg" alt="">XRP<p>XRP</p></td>
@@ -192,6 +344,21 @@
         <button>BUY</button>
         <button>SELL</button>
       </td>
+      <td class="trade-table-rwd">
+        <div class="trade-table-rwd-name">
+          <img src="img/XRP.svg" alt="">XRP<p>XRP</p>
+        </div>
+        <div class="trade-table-rwd-change">
+          <p>-2.04%</p>
+        </div>
+        <div class="trade-table-rwd-price">
+          <p>$0.3343</p>
+        </div>
+        <div class="trade-table-rwd-trade">
+          <button>BUY</button>
+          <button>SELL</button>
+        </div>
+      </td>
     </tr>
 
   </table>
@@ -200,7 +367,7 @@
 
 
    <!-- --------page-------- -->
-   <div class="page trade-sec1">
+   <!-- <div class="page trade-sec1">
     <a href="#"><i class="fa-solid fa-angle-left"></i></a>
     <a href="#">1</a>
     <a href="#">2</a>
@@ -209,7 +376,7 @@
     <a href="#"><i class="fa-solid fa-angle-right"></i></a>
     <a href="#"><i class="fa-solid fa-angles-right"></i></a>
 
-   </div>
+   </div> -->
 
 </main>
 
@@ -281,4 +448,6 @@
     
 
 </div>
+<script src="./js/index.js"></script>
+
 </body>

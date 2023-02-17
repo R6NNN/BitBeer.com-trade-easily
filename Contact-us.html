@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/rwd.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jquery-3.6.3.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>BitBeer - Contact us</title>
 </head>
 
@@ -15,9 +18,17 @@
  
     <!-- --------header-------- -->
     <header>
+        
       <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
       </a>
-      <nav>
+      <!----- RWD ham----->
+      <div class="rwd-ham">
+        <a href="Wallet.html"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-bars ham-btn"></i>
+      </div>
+      
+    
+      <!-- <nav> -->
           <ul class="nav_list">
               <li>
                   <a href="Trade.html">Trade</a>
@@ -29,13 +40,13 @@
                   <a href="Tutorial.html">Tutorial</a>
               </li>
               <li>
-                  <a class="btn-strong" href="Contact-us.html">Contact us</a>
+                  <a href="Contact-us.html">Contact us</a>
               </li>
-
-              <a  class="btn-login" href="Login.html">Login</a>
-              
+  
+              <a class="btn-login" href="Login.html">Login</a>
+  
           </ul>
-      </nav>
+      <!-- </nav> -->
   </header>
 
 <!-- ----------------main--------------- -->
@@ -46,7 +57,7 @@
     <div class="contact-all">
       <section class="con-form">
         <form  class="con-form-text" action="">
-          <p>Your E-mail ：</p>
+          <p>Your E-mail ： *</p>
           <input type="text" placeholder="Let us can reply you ">
 
           <p>Your name ：</p>
@@ -55,7 +66,7 @@
           <p>Your request subject : </p>
           <input type="text" placeholder="Give a short desctiptive title">
 
-          <p>Describe ：</p>
+          <p>Describe ： *</p>
           <textarea  class="des" name="contact-describe" id="" cols="30" rows="10" placeholder="Tell us about your message:"></textarea>
           <!-- <input type="textarea"> -->
 
@@ -65,7 +76,7 @@
           <button type="submit">Send</button>
 
         </form>
-        <!-- <button>Send</button> -->
+        
 
       </section>
 
@@ -175,7 +186,7 @@
 
 
 
-
+    <script src="./js/index.js"></script>
 
 </body>
 

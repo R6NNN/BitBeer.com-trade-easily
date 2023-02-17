@@ -136,6 +136,9 @@ header li {
   color:#DE5000;
 }
 
+
+
+
 /* --------swiperbanner------- */
 .swiper {
   /* width: 80vw;
@@ -778,16 +781,19 @@ svg{
 }
 
 
-
-
 .trade-table td {
   border-bottom: 1px solid #CFCFCF;
   height: 60px;
   line-height: 60px;
 }
 
+
 .trade-table tr:hover:not(.table-head) {
   background-color: #efeded;
+}
+
+.trade-table-rwd{
+  display: none;
 }
 
 .trade-table-name {
@@ -1061,20 +1067,6 @@ svg{
 
 /* --------Trade- Payment Option--------- */
 
-/* .payopt-head{
-  display: flex;
-  justify-content: space-between;
-  padding:0 150px;
-  margin-bottom: 20px;
- 
-} */
-
-/* .payopt-head >p{
-  font-size: 15px;
-  display: inline-block;
-  color: #656363;
-} */
-
 .payopt-wallet {
   background: #F9F9F9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1098,7 +1090,6 @@ svg{
 
 .payopt-wallet:focus {
   background-color: #F2E8C6;
-
 }
 
 .payopt-wallet img {
@@ -1508,6 +1499,11 @@ dialog::backdrop {
   border-radius: 10px;
 }
 
+.main-news-img img:nth-child(2){
+  display: none;
+  
+ }
+
 .news-text {
   width: 500px;
   padding-top: 30px;
@@ -1626,6 +1622,10 @@ dialog::backdrop {
 
 }
 
+.mid-news-block h6{
+  display: none;
+}
+
 .allnews h5 {
   font-size: 28px;
   color: #9F7D05;
@@ -1650,11 +1650,11 @@ dialog::backdrop {
   font-size: 20px;
   line-height: 60px;
   padding-left: 15px;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis;
   overflow:hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical; 
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 1; */
 }
 
 .allnews-block p {
@@ -2147,13 +2147,14 @@ input[type="search"]:focus {
 
 /* -------------Login-------------- */
 
+/* 
 .login{
   width: 1200px;
   margin: 0 auto;
   background-image: url(../img/tut_bg.png);
   background-position: 0 500px;
   background-repeat: no-repeat;
-}
+} */
 
 .login-bg2{
   background-image: url(../img/tut_bg.png);
@@ -2161,6 +2162,7 @@ input[type="search"]:focus {
   background-repeat: no-repeat;
   padding-bottom:50px ;
   min-width: 1200px;
+  
 
 }
 
@@ -2340,6 +2342,7 @@ background-color:none;
   /* width: 800px; */
   background-color: white;
   font-size: 18px;
+  border: 1px solid #CFCFCF;
 }
 
 .detail-head{
@@ -2442,4 +2445,8 @@ background-color:none;
 .detail-table-usd>.bt-r>button{
   background-color: #DC5252;
   color: white;
+}
+
+.detail-table-bt-rwd{
+  display: none;
 }

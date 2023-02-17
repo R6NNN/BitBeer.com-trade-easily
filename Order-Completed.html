@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/rwd.css" rel="stylesheet" type="text/css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="./js/jquery-3.6.3.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>BitBeer - Order Completed</title>
 </head>
@@ -16,12 +18,20 @@
  
     <!-- --------header-------- -->
     <header>
+        
       <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
       </a>
-      <nav>
+      <!----- RWD ham----->
+      <div class="rwd-ham">
+        <a href="Wallet.html"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-bars ham-btn"></i>
+      </div>
+      
+    
+      <!-- <nav> -->
           <ul class="nav_list">
               <li>
-                  <a class="btn-strong" href="Trade.html">Trade</a>
+                  <a href="Trade.html">Trade</a>
               </li>
               <li>
                   <a href="News.html">News</a>
@@ -32,14 +42,11 @@
               <li>
                   <a href="Contact-us.html">Contact us</a>
               </li>
-
-              <!-- <a  class="btn-login" href="#">Login</a> -->
-              <a href=""><i class="fa-solid fa-user"></i></a>
-              <a href=""><i class="fa-solid fa-gear"></i></a>
-
-              
+  
+              <a class="btn-login" href="Login.html">Login</a>
+  
           </ul>
-      </nav>
+      <!-- </nav> -->
   </header>
 
      <!-- --------main-------- -->
@@ -47,40 +54,40 @@
       <h3>Payment Completed</h3>
       <h6>Crypto will send to your wallet in minutes.</h6>
     
-        <div class="order-inf">
-          <div class="order-inf-item">
-            <div class="order-inf-item-type">
-              <img src="img/ETH.svg" alt=""><h5 class="buyin-inf-h5">Ethereum - ETH  </h5>
-            </div>
-            <p>1.13</p>
+      <div class="order-inf">
+        <div class="order-inf-item">
+          <div class="order-inf-item-type">
+            <img src="img/ETH.svg" alt=""><h5 class="buyin-inf-h5">Ethereum - ETH  </h5>
           </div>
-          <div class="order-inf-price">
-            <p>1ETH ≈ USD＄ 1,451.8</p>
-            <div class="order-inf-price-title">
-              <p>Payment Option</p>
-              <p><img src="img/wallet.svg" alt=""> Wallet</p>
-            </div>
-            <img  data-aos="zoom-out-up"
-            data-aos-anchor-placement="center-bottom"data-aos-once="true" src="img/stemp.png" alt="certified">
-            <table class="order-inf-table">
-              <tr>
-                <td>ETH Price: USD$</td>
-                <td>1,451.8</td>
-              </tr>
-              <tr>
-                <td>Fee:  USD$</td>
-                <td>0.5</td>
-              </tr>
-              <tr>
-                <td>Total Pay: USD$</td>
-                <td>1,452.3</td>
-              </tr>
-            </table>
-            <button class="order-com-btn1" onclick="window.location.href='Trade.html'">Do next trade</button>
-            <button class="order-com-btn2">Go to my wallet</button>
-          
-          </div>
+          <p>1.13 ETH</p>
         </div>
+        <div class="order-inf-price">
+          <img  data-aos="zoom-out-up"
+          data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="700" src="img/stemp_1.png" alt="certified">
+          <p>1ETH ≈ USD ＄ 1,451.8</p>
+          <div class="order-inf-price-title">
+            <p>Payment Option</p>
+            <p><img src="img/wallet.svg" alt=""> Wallet</p>
+          </div>
+          <table class="order-inf-table">
+            <tr>
+              <td>ETH Price: USD $</td>
+              <td>1,451.8</td>
+            </tr>
+            <tr>
+              <td>Fee:  USD $</td>
+              <td>0.5</td>
+            </tr>
+            <tr>
+              <td>Total Pay: USD $</td>
+              <td>1,452.3</td>
+            </tr>
+          </table>
+          <button class="order-com-btn1" onclick="window.location.href='Trade.html'">Go next Trade</button>
+          <button class="order-com-btn2" onclick="window.location.href='Wallent.html'">Back to my wallet</button>
+
+        </div>
+      </div>
 
 
         </div>
@@ -155,7 +162,7 @@
     <script>
         AOS.init();
       </script>
-
+  <script src="./js/index.js"></script>
 
 
 </body>

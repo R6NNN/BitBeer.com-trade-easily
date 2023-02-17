@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/rwd.css" rel="stylesheet" type="text/css" />
+  <script src="./js/jquery-3.6.3.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>BitBeer - News</title>
 </head>
@@ -15,15 +17,23 @@
  
     <!-- --------header-------- -->
     <header>
+        
       <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
       </a>
-      <nav>
+      <!----- RWD ham----->
+      <div class="rwd-ham">
+        <a href="Wallet.html"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-bars ham-btn"></i>
+      </div>
+      
+    
+      <!-- <nav> -->
           <ul class="nav_list">
               <li>
                   <a href="Trade.html">Trade</a>
               </li>
               <li>
-                  <a class="btn-strong" href="News.html">News</a>
+                  <a href="News.html">News</a>
               </li>
               <li>
                   <a href="Tutorial.html">Tutorial</a>
@@ -31,13 +41,11 @@
               <li>
                   <a href="Contact-us.html">Contact us</a>
               </li>
-
-              <a  class="btn-login" href="Login.html">Login</a>
-              <!-- <a href=""><i class="fa-solid fa-user"></i></a>
-              <a href=""><i class="fa-solid fa-gear"></i></a> -->
-              
+  
+              <a class="btn-login" href="Login.html">Login</a>
+  
           </ul>
-      </nav>
+      <!-- </nav> -->
   </header>
 
      <!-- --------main-------- -->
@@ -49,6 +57,7 @@
         
         <div class="main-news-img">
           <img src="img/main-img.png" alt="">
+          <img src="img/main-img-2.png" alt="">
         </div>
         <div class="news-text">
         
@@ -68,6 +77,7 @@
               </div> 
               <p>Dec/27/2022</p>
               <h5>Announces Date of First Quarter 2022 Financial Results</h5>
+              <h6> Read More</h6>
           </div>
         </a>
         <a href="#">
@@ -77,6 +87,7 @@
             </div> 
             <p>Dec/23/2022</p>
             <h5>Participate in the Morgan Stanley Technology, Media and Telecom Conference</h5>
+            <h6> Read More</h6>
           </div>
         </a>
         <a href="#">
@@ -86,6 +97,7 @@
             </div> 
             <p>Dec/21/2022</p>
             <h5>Participate in the Goldman Sachs Communacopia & Technology Conference</h5>
+            <h6> Read More</h6>
           </div>
         </a>
       </section>
@@ -229,5 +241,5 @@
 
 
 </body>
-
+<script src="./js/index.js"></script>
 </html>

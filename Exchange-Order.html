@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/rwd.css" rel="stylesheet" type="text/css" />
+  <script src="./js/jquery-3.6.3.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>BitBeer - Exchange Order</title>
 </head>
@@ -15,12 +17,20 @@
  
     <!-- --------header-------- -->
     <header>
+        
       <a href="index.html"><img src="img/Logo.svg" alt="BitBeer">
       </a>
-      <nav>
+      <!----- RWD ham----->
+      <div class="rwd-ham">
+        <a href="Wallet.html"><i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-bars ham-btn"></i>
+      </div>
+      
+    
+      <!-- <nav> -->
           <ul class="nav_list">
-              <li >
-                  <a class="btn-strong" href="Trade.html">Trade</a>
+              <li>
+                  <a href="Trade.html">Trade</a>
               </li>
               <li>
                   <a href="News.html">News</a>
@@ -31,13 +41,11 @@
               <li>
                   <a href="Contact-us.html">Contact us</a>
               </li>
-
-                <!-- <a  class="btn-login" href="#">Login</a> -->
-              <a href=""><i class="fa-solid fa-user"></i></a>
-              <a href=""><i class="fa-solid fa-gear"></i></a>
-              
+  
+              <a class="btn-login" href="Login.html">Login</a>
+  
           </ul>
-      </nav>
+      <!-- </nav> -->
   </header>
 
      <!-- --------main-------- -->
@@ -49,25 +57,25 @@
             <div class="order-inf-item-type">
               <img src="img/ETH.svg" alt=""><h5 class="buyin-inf-h5">Ethereum - ETH  </h5>
             </div>
-            <p>1.13</p>
+            <p>1.13 ETH</p>
           </div>
           <div class="order-inf-price">
-            <p>1ETH ≈ USD＄ 1,451.8</p>
+            <p>1ETH ≈ USD ＄ 1,451.8</p>
             <div class="order-inf-price-title">
               <p>Payment Option</p>
               <p><img src="img/wallet.svg" alt=""> Wallet</p>
             </div>
             <table class="order-inf-table">
               <tr>
-                <td>ETH Price: USD$</td>
+                <td>ETH Price: USD $</td>
                 <td>1,451.8</td>
               </tr>
               <tr>
-                <td>Fee:  USD$</td>
+                <td>Fee:  USD $</td>
                 <td>0.5</td>
               </tr>
               <tr>
-                <td>Total Pay: USD$</td>
+                <td>Total Pay: USD $</td>
                 <td>1,452.3</td>
               </tr>
             </table>
@@ -90,6 +98,7 @@
     </main>
 
 
+          
      
 
 
@@ -161,8 +170,8 @@
 
 
 
-<script src="js/index.js"></script>
-
+<script src="js/exchange-confirm.js"></script>
+<script src="./js/index.js"></script>
 </body>
 
 </html>
