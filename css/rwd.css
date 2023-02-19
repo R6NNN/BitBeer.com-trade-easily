@@ -31,17 +31,33 @@
     margin-right: 20px;
   }
 
+  .ham-btn::after{
+    content: '\f00d';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free"; 
+    
+    display: none;
+    color:#DE5000;
+    font-size: 30px;
+    position: absolute;
+    top:15px;
+    right:20px;
+  }
+
 
 
   .burgar_btn-show {
     /* display: flex; */
     left: 0px;
     transition: all 0.5s;
+    /* height: 100%; */
     /* max-width: 200px; */
     /* width: 100%;
   height:100%; */
 
   }
+
+
 
 
   header img {
@@ -56,9 +72,11 @@
     left: 500px;
     top: 60px;
     width: 100%;
+    height: 600px;
     border-top: 1px solid gainsboro;
     margin-right: 0;
-    background-image: url(../img/grey.png);
+    background-image: 
+      linear-gradient(rgba(206, 206, 206, 0.248),rgba(197, 197, 197, 0.13)),url(../img/grey.png);
     /* overflow: hidden;
     max-height: 0;
     max-width: 0; */
@@ -67,6 +85,9 @@
     /* padding-top: 10px;
     padding-bottom: 30px; */
   }
+
+  
+
 
   header li {
     margin-right: 0;
@@ -686,7 +707,11 @@
   }
 
 
-  .buyin-form-crypto>input,
+  .buyin-form-crypto>input{
+    width: 83%;
+  }
+
+
   .buyin-form-currency>input {
     width: 50%;
 
@@ -699,6 +724,7 @@
     text-align: left;
     width: auto;
     margin-left: 5%;
+    display: block;
   }
 
   .payopt-wallet {
@@ -1266,10 +1292,10 @@
   }
 
   .pop-sec>i {
-    position: fixed;
+    /* position: fixed; */
     font-size: 35px;
-    top: 55px;
-    right: 35px;
+    top: 10px;
+    right: 15px;
 
   }
 
@@ -1280,7 +1306,7 @@
   }
 
   .get-sta-inf-block {
-    display: block;
+    /* display: block; */
     border: none;
     border-bottom: 1px solid #baa559;
   }
@@ -1290,21 +1316,37 @@
     transform: rotate(30deg);
     line-height: 1.25;
     display: inline;
+    vertical-align:middle;
     
+  
     /* position: absolute;
     top:100px; */
   }
 
+
+  .faq-arrow-wra>i{
+    font-size: 30px;
+    color: #DE5000;
+    transform: rotate(0deg);
+  }
+
   .get-sta-inf-block p{
-    display: inline-box;
-    /* margin-left: 50px; */
+    display: inline;
     font-size: 16px;
     line-height: 1.25;
-    text-align: justify;
-    /* margin: -100px; */
-    
-    
   }
+
+  .get-sta-inf-block-inf {
+    border-top: none;
+  }
+
+  .get-sta-inf-block-inf p{
+    font-size: 16px;
+    line-height: 1.5;
+    /* border-top: none; */
+  }
+
+
 
 
   /* =========Wallet .html========== */

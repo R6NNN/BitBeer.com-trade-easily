@@ -438,6 +438,8 @@ header li {
 }
 
 
+
+
 /* ---------section3-------- */
 
 .section3 {
@@ -1028,41 +1030,54 @@ svg{
 .buyin form select,
 .buyin form input {
   height: 50px;
+ 
   background: #fcfcfc;
   border: 1px solid rgba(188, 185, 172, 0.13);
   box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0;
   margin-bottom: 30px;
   margin-left: 20px;
   font-family: Microsoft JhengHei, Arial;
+  padding-right: 10px;
 
 }
 
 .buyin-form-crypto select,
 .buyin-form-currency select {
   text-align: center;
-  width: 150px;
+  width: 100px;
   color: #656363;
+  margin-left: 20px;
   font-family: Microsoft JhengHei, Arial;
 }
 
 .buyin-form-crypto>input {
   height: 50px;
-  font-size: 18px;
-  width: 400px;
+  
+  width: 320px;
   text-align: right;
   font-family: Microsoft JhengHei, Arial;
 }
 
 .buyin-form-currency>input {
   height: 50px;
-  font-size: 18px;
-  width: 400px;
+  
+  width: 200px;
   padding: 0 20px;
   text-align: right;
   font-family: Microsoft JhengHei, Arial;
+}
+
+.buyin-form-crypto>h6,
+.buyin-form-currency>h6{
+  display: inline-block;
+  width: 150px;
+  font-size:20px;
+  font-weight: 500;
+  color: #9F7D05;
+  /* margin-right: 20px; */
 }
 
 /* --------Trade- Payment Option--------- */
@@ -1870,10 +1885,10 @@ input[type="search"]:focus {
   padding: 20px 10px;
 }
 
-.get-sta-inf-block>i{
+.faq-arrow-wra>i{
   font-size: 30px;
   color: #DE5000;
-
+  transform: rotate(0deg);
 }
 
 .get-sta-inf-block p,
@@ -1901,6 +1916,8 @@ input[type="search"]:focus {
   border-color: #9F7D05;
   padding: 20px 10px;
   display: none;
+
+
 }
 
 

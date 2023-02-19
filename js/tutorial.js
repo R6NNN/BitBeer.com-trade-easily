@@ -17,7 +17,7 @@ btn2.addEventListener("click", function () {
 faqOff.addEventListener("click", function () {
   faqPop.style.display = "none";
   document.body.style.overflow = "scroll";
-
+  
 });
 
 // =========== QA內容展開與隱藏(可動) ==============
@@ -26,21 +26,23 @@ let faqHide = document.querySelector("#faq-inf-hide");
 let faqArr = document.querySelector("#faq-arrow");
 
 
-// faqShow.addEventListener("click", function() {
-//   if (faqHide.style.display === "none") {
-//     faqHide.style.display = "block";
-//     faqArr.style.transform = "rotate( 90deg)";
-//     faqArr.style.transformOrigin = "50%";
-//     faqArr.style.transitionDuration = "0.3s";
-//     faqHide.style.transitionDuration = "0.8s";
+faqShow.addEventListener("click", function() {
+  if (faqHide.style.display === "none") {
+    faqHide.style.display = "block";
+    faqArr.style.transform = "rotate( 90deg)";
+    faqArr.style.transformOrigin = "50%";
+    faqArr.style.transitionDuration = "0.3s";
+    faqHide.style.transitionDuration = "0.8s";
 
-//   } else {
-//     faqHide.style.display = "none";
-//     faqArr.style.transform = "rotate(0deg)";
-//     faqArr.style.transitionDuration = "0.3s";
+  } else {
+    faqHide.style.display = "none";
+    faqArr.style.transform = "rotate(0deg)";
+    faqArr.style.transitionDuration = "0.3s";
 
-//   }
-// });
+  }
+});
+
+
 
 // =========== QA內容展開與隱藏(clas測試用) ==============
 
