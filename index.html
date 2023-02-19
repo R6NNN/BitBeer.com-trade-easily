@@ -32,7 +32,6 @@
 
         <!-- <nav> -->
         
-       
           <ul class="nav_list">
             <li>
                 <a href="Trade.html">Trade</a>
@@ -46,8 +45,12 @@
             <li>
                 <a href="Contact-us.html">Contact us</a>
             </li>
+            
+            <a class="btn-login" href="Login.html">Login</a> 
+            <!-- <a href=""><i class="fa-solid fa-user"></i></a> -->
+            <li class="nav_bg">
 
-            <a class="btn-login" href="Login.html">Login</a>
+            </li>
 
         </ul>  
      
@@ -116,21 +119,22 @@
                                 <option value="SOL">Solana- SOL</option>
                                 <option value="XRP">XRP- XRP</option>
                             </select>
-                            <input class="q-tra-num" type="number" id="qbuy_crypto" placeholder=" 0.2 - 20">
+                            <input class="q-tra-num" type="number" id="qbuy_crypto" placeholder=" 1 ">
                             <p>Max:100</p>
 
-                            <h4>I want Spend</h4>
+                            <h4>I want Pay</h4>
                             <select name="buy-currency" id="toCurrency">
                                 <option value="USD">USD</option>
                                 <option value="NTD">NTD</option>
                             </select>
-                            <input class="q-tra-num" type="number" id="qbuy_currency" placeholder="10 - 1000 USD">
+                            <input class="q-tra-num" type="number" id="qbuy_currency" placeholder="USD ">
                             <input class="q-tra-con-btn" type="submit" value="Buy" onclick="false">
                         </div>
                     </form>
                 </div>
-                <!------buy content end------>
-                <!------sell content start------>
+                <!-------   buy content end  ------>
+
+                <!------- sell content start ------>
                 <input id="q-sell-content" name="tab-trans-trade" type="radio">
                 <label for="q-sell-content">Sell</label>
                 <div class="q-trade-content">
@@ -138,7 +142,7 @@
 
                         <div class="q-trade-block">
                             <h4>I want Sell</h4>
-                            <select name="buy-crypto">
+                            <select name="buy-crypto" id="toCrypto">
                                 <!-- <option value="">Crypto</option> -->
                                 <option value="BTC">Bitcoin- BTC</option>
                                 <option value="ETH">Ethereum- ETH</option>
@@ -150,15 +154,15 @@
                                 <option value="SOL">Solana- SOL</option>
                                 <option value="XRP">XRP- XRP</option>
                             </select>
-                            <input class="q-tra-num" type="number" placeholder="0.2 - 20">
+                            <input class="q-tra-num" type="number"  id="qsell_crypto" placeholder=" 0.2 - 20">
 
                             <h4>I will Receive </h4>
-                            <select name="buy-currency">
+                            <select name="buy-currency" id="fromCurrency">
                                 <option value="USD">USD</option>
                                 <option value="NTD">NTD</option>
                             </select>
-                            <input class="q-tra-num" type="text" placeholder="  10 - 1000 USD" readonly="readonly">
-                            <input class="q-tra-con-btn" type="submit" value="Sell" onclick="false">
+                            <input class="q-tra-num" type="text"  id="qsell_currency" placeholder=" 10 - 1000 USD" >
+                            <input class="q-tra-con-btn" type="submit" value="Sell" >
                         </div>
                     </form>
 
@@ -276,7 +280,7 @@
             </div>
             <div class="col">
                 <h5>Product</h5>
-                <a href="#">Trade</a>
+                <a href="Trade.html">Trade</a>
                 <a href="#">Regular quota</a>
                 <a href="#">OTC</a>
             </div>
@@ -285,8 +289,8 @@
                 <h5>Information</h5>
                 <a href="#">Limits</a>
                 <a href="#">Fees</a>
-                <a href="#">News</a>
-                <a href="#">Support</a>
+                <a href="News.html">News</a>
+                <a href="Tutorial.html">Support</a>
             </div>
 
             <div class="col-last col">

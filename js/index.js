@@ -1,42 +1,62 @@
 
 
-//=============RWD navbar click============
+//============= RWD navbar click =============
 
 $(document).ready(function () {
+  //點出現導覽列 
   $('.ham-btn').on('click', function (e) {
     $('header ul').toggleClass('burgar_btn-show');
-    $
-    
+    $('body').css('overflow','hidden');
 
-    // 讓瀏覽器知道有點擊 .burgar_btn 的時候，會有收合功能，並在 body 產生一個新的 Class 名稱 burgar_btn-show
   });
-});
 
-// $(document).mouseup(function(e) {
-//   var _con = $('header ul'); // 就是你不希望被點到的 div
-//   if (!_con.is(e.target) && _con.has(e.target).length === 0 ) {
-//       $('header ul').removeClass('burgar_btn-show'); // 功能代碼
-//   }
-// });
+   //點黑底退出導覽列 
+  $('.nav_bg').on('click',function(event){
+    event.stopPropagation();
+      $('header ul').toggleClass('burgar_btn-show');
+      $('body').css('overflow','scroll');
+      
+    });
+
+
+  
+
+  });
+
+//=========== 停止預設跳轉事件 =========
+
+let el = document.querySelector(".q-tra-con-btn");
+
+el.addEventListener('click', function(e) {
+    e.preventDefault(); 
+  });
+
+let el2 = document.querySelectorAll(".q-tra-con-btn")[1];
+
+el2.addEventListener('click', function(e) {
+    e.preventDefault(); 
+  });
 
 
 //=============  Currency Converter  ============
 
-//1. 當輸入qbuy_crypto時，值經過計算將會回傳成為qbuy_currency的value
-//2. 若有選擇改變 toCurrency，將會重新計算回傳成為qbuy_currency的value
-
-//3. 若先輸入qbuy_currency時，值經過計算回傳成為qbuy_crypto的value
-//4. 若有選擇改變 toCurrency，將會重新計算回傳成為qbuy_currency的value
-
-
 
 // function quickBuy(){
+  //buy-sec
   const qBuycryptoNum = document.getElementById("qbuy_crypto");
   const qBuycurrNum = document.getElementById("qbuy_currency");
   const toCurrency = document.getElementById("toCurrency");
   const fromCrypto = document.getElementById("fromCrypto");
+  //sell-sec
 
-  //匯率物件
+  const qSellcryptoNum = document.querySelector("#qsell_crypto");
+  const qSellcurrNum = document.querySelector("#qsell_currency");
+  const toCrypto = document.querySelector('#toCrypto');
+  const fromCurrency = document.querySelector('#fromCurrency');
+  
+
+
+  //---匯率物件
   const rateCurr = {
     "USD": 1,
     "NTD": 30
@@ -54,15 +74,20 @@ $(document).ready(function () {
     "XRP": 0.38
   };
   
+// --------  placeholder  匯率顯示(not yet)--------
+
+// fromCrypto.addEventListener("change",function(){
+//   qBuycurrNum.setAttribute("placeholder",(rateCrypto[fromCrypto.value]+ " USD "))
+// });
 
 
 
 
+// ---------- 匯率換算計算（Buy）----------
 
-
-  // ================匯率換算計算（Buy）==================
- //TODO: 製作SELL版本
  //FIXME: 整理function
+
+ //FIXME: 四捨五入的小數換算？
 
 
   qBuycryptoNum.addEventListener("change", function(total){
@@ -73,15 +98,14 @@ $(document).ready(function () {
     else{
       total = result * rateCurr["NTD"];
     }
-    console.log (total);
+   
+    qBuycurrNum.value=Math.round(total*100)/100;
+    // total = (Math.round(qBuycurrNum.value))*100/100;
+    // console.log (total);
+    // qBuycurrNum.value=total;
 
-    qBuycurrNum.value=total;
-    // console.log(result);
-    // toCurrency.addEventListener("change",function(){
-    //   totalResult = result * rateCurr[toCurrency.value]
-    //   console.log(totalResult)
-    // })
   });
+
 
   fromCrypto.addEventListener("change", function(total){
     result = qBuycryptoNum.value * rateCrypto[fromCrypto.value];
@@ -93,48 +117,84 @@ $(document).ready(function () {
     else{
       total = result * rateCurr["NTD"];
     }
-    console.log (total);
+    // console.log (total);
 
-    qBuycurrNum.value=total;
+    qBuycurrNum.value=Math.round(total*100)/100;
+    // total = (Math.round(qBuycurrNum.value))*100/100;
+    //四捨五入所得的total數字
+
+  
   });
 
 
   toCurrency.addEventListener("change", function(total){
     result = qBuycryptoNum.value * rateCrypto[fromCrypto.value];
-    // console.log(result);
 
-    // if (toCurrency.value == "USD"){
-    //   total = result * rateCurr["USD"];
-    // }
-    // else{
-    //   total = result * rateCurr["NTD"];
-    // }
-    
     total=result*rateCurr[toCurrency.value];
 
-    console.log(total); //30
-    qBuycurrNum.value=total;
+    // console.log(total); 
+    qBuycurrNum.value=Math.round(total*100)/100;
     
   });
 
-
   qBuycurrNum.addEventListener("change", function(total){
     result = qBuycurrNum.value / rateCrypto[fromCrypto.value];
-    // console.log(result);
-
-    // if (toCurrency.value == "USD"){
-    //   total = result / rateCurr["USD"];
-    // }
-    // else{
-    //   total = result / rateCurr["NTD"];
-    // }
 
     total=result*rateCurr[toCurrency.value];
 
-    console.log(total);
-    qBuycryptoNum.value=total;
+    // console.log(total);
+    qBuycryptoNum.value=Math.round(total*100)/100;
     
+  });
 
+  // -------匯率換算計算（sell）----
+
+  qSellcryptoNum.addEventListener("change", function(total){
+    result = qSellcryptoNum.value * rateCrypto[toCrypto.value];
+    if (toCurrency.value == "USD"){
+      total = result * rateCurr["USD"];
+    }
+    else{
+      total = result * rateCurr["NTD"];
+    }
+    // console.log (total);
+
+    qSellcurrNum.value=Math.round(total*100)/100;
+
+  });
+
+  toCrypto.addEventListener("change", function(total){
+    result = qSellcryptoNum.value * rateCrypto[toCrypto.value];
+    // console.log(result);
+
+    if (toCurrency.value == "USD"){
+      total = result * rateCurr["USD"];
+    }
+    else{
+      total = result * rateCurr["NTD"];
+    }
+    // console.log (total);
+
+    qSellcurrNum.value=Math.round(total*100)/100;
+  });
+
+
+  fromCurrency.addEventListener("change", function(total){
+    result = qSellcryptoNum.value * rateCrypto[toCrypto.value];
+    total=result*rateCurr[fromCurrency.value];
+    // console.log(total); 
+    qSellcurrNum.value=Math.round(total*100)/100;
+
+  });
+
+  qSellcurrNum.addEventListener("change", function(total){
+    result = qSellcurrNum.value / rateCrypto[toCrypto.value];
+
+    total=result*rateCurr[fromCurrency.value];
+
+    // console.log(total);
+    qSellcryptoNum.value=Math.round(total*100)/100;
+    
   });
 
 

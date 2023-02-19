@@ -20,49 +20,28 @@ faqOff.addEventListener("click", function () {
   
 });
 
-// =========== QA內容展開與隱藏(可動) ==============
-let faqShow = document.querySelector("#faq-inf-show");
-let faqHide = document.querySelector("#faq-inf-hide");
-let faqArr = document.querySelector("#faq-arrow");
 
+// =========== QA內容展開與隱藏 ==============
 
-faqShow.addEventListener("click", function() {
-  if (faqHide.style.display === "none") {
-    faqHide.style.display = "block";
-    faqArr.style.transform = "rotate( 90deg)";
-    faqArr.style.transformOrigin = "50%";
-    faqArr.style.transitionDuration = "0.3s";
-    faqHide.style.transitionDuration = "0.8s";
+  
 
-  } else {
-    faqHide.style.display = "none";
-    faqArr.style.transform = "rotate(0deg)";
-    faqArr.style.transitionDuration = "0.3s";
+let faqShow = document.querySelectorAll(".get-sta-inf-block");
+let faqHide = document.querySelectorAll(".get-sta-inf-block-inf");
+let faqArr = document.querySelectorAll(".arrow");
 
-  }
-});
+for(let i = 0; i < faqShow.length; i++){
+  faqShow[i].addEventListener("click",function(){
+    if (faqHide[i].style.display === "none"){
+    faqHide[i].style.display = "block";
+    faqArr[i].style.transform = "rotate(90deg)";
+    faqArr[i].style.transitionDuration = "0.3s";
+    }else{
+      faqHide[i].style.display = "none";
+      faqArr[i].style.transform = "rotate(0deg)";
+      faqArr[i].style.transitionDuration = "0.3s";
+    }
 
+  
+  })
+}
 
-
-// =========== QA內容展開與隱藏(clas測試用) ==============
-
-// let faqShow = document.querySelectorall(".get-sta-inf-block");
-// let faqHide = document.querySelectorall(".get-sta-inf-block-inf");
-// let faqArr = document.querySelectorall(".arrow");
-
-// faqShow.forEach() => {
-//   e.addEventListener("click", ()=> {
-//   // if (faqHide.style.display === "none") {
-//   //   faqHide.style.display = "block";
-//   //   faqArr.style.transform = "rotate(90deg)";
-//   //   faqArr.style.transitionDuration = "0.3s";
-//   //   faqHide.style.transitionDuration = "0.8s";
-
-//   // } else {
-//   //   faqHide.style.display = "none";
-//   //   faqArr.style.transform = "rotate(0deg)";
-//   //   faqArr.style.transitionDuration = "0.3s";
-
-//   // }
-
-// })

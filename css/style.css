@@ -81,9 +81,10 @@ header li {
 
 }
 
-/* .nav{
-  width: 1200px;
-} */
+.nav_bg{
+  display: none;
+}
+
 
 .nav_list li a {
   display: block;
@@ -114,6 +115,8 @@ header li {
 }
 
 
+
+
 .btn-login {
   border-radius: 10px;
   border: none;
@@ -123,6 +126,7 @@ header li {
   padding: 10px 20px;
   height: 20px;
   margin: 20px 0px;
+  
 
 }
 
@@ -131,10 +135,14 @@ header li {
 }
 
 
-
 .nav_list i .btn-strong{
   color:#DE5000;
 }
+
+.btn-strong{
+  color:#DE5000;
+}
+
 
 
 
@@ -1088,7 +1096,7 @@ svg{
   border-radius: 20px;
   border: none;
   font-family: Microsoft JhengHei, Arial;
-
+  width: 600px;
   height: 70px;
   padding: 10px 50px;
   color: #656363;
@@ -1096,7 +1104,7 @@ svg{
   margin: 10px auto;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: left;
   align-items: center;
   cursor: pointer;
@@ -1448,7 +1456,7 @@ dialog::backdrop {
 
   width: 220px;
   margin: 30px auto;
-  padding: 10px 30px;
+  padding: 10px 20px;
 
   background: #ffffff;
   border: 2px solid #EEC535;
@@ -1665,11 +1673,11 @@ dialog::backdrop {
   font-size: 20px;
   line-height: 60px;
   padding-left: 15px;
-  /* text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow:hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical; 
-  -webkit-line-clamp: 1; */
+  -webkit-line-clamp: 1;
 }
 
 .allnews-block p {
@@ -1777,12 +1785,13 @@ input[type="search"]:focus {
 
 .pop-sec{
   width:80vw;
-  height: 600px;
+  height: 80%;
   background-color: #FFFFFF;
   margin: 50px auto;
   border-radius: 10px;
   overflow-y:scroll;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .pop-sec>i{
@@ -1903,6 +1912,7 @@ input[type="search"]:focus {
 /* #faq-inf-hide{
   background: #FCFCFC;
   border-width: 1px 0px;
+
   border-style: solid;
   border-color: #9F7D05;
   padding: 20px 10px;
@@ -1910,12 +1920,13 @@ input[type="search"]:focus {
 } */
 
 .get-sta-inf-block-inf{
-  background: #FCFCFC;
+  background: #f5f4f4;
   border-width: 1px 0px;
   border-style: solid;
   border-color: #9F7D05;
   padding: 20px 10px;
   display: none;
+  /* transform: translateY(-30%); */
 
 
 }
@@ -1948,6 +1959,7 @@ input[type="search"]:focus {
   border-radius: 20px;
   width: 250px;
   padding: 30px 0 40px;
+  cursor: pointer;
 }
 
 .faq-block-type p {

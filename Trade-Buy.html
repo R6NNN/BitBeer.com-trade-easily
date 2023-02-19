@@ -29,7 +29,7 @@
       <!-- <nav> -->
           <ul class="nav_list">
               <li>
-                  <a href="Trade.html">Trade</a>
+                  <a class='btn-strong' href="Trade.html">Trade</a>
               </li>
               <li>
                   <a href="News.html">News</a>
@@ -41,7 +41,11 @@
                   <a href="Contact-us.html">Contact us</a>
               </li>
   
-              <a class="btn-login" href="Login.html">Login</a>
+              <!-- <a class="btn-login" href="Login.html">Login</a> -->
+              <a href="Wallet.html" class="nav-person"><i class="fa-solid fa-user"></i></a>
+              <li class="nav_bg">
+
+              </li>
   
           </ul>
       <!-- </nav> -->
@@ -76,7 +80,7 @@
           <!------ buyin-form -------->
           <form action="">
 
-          <div class="buyin-form-crypto">
+          <div class="buyin-form-crypto" >
             <h6>Buying</h6>
             <!-- <select name="buy-crypto">
               
@@ -90,16 +94,16 @@
               <option value="sol">SOL</option>
               <option value="xrp">XRP</option>
             </select> -->
-            <input type="number" value="1.13"                                >
+            <input id="buyCrypto" type="number" value="1.13" max="20">                                >
           </div>
           <div class="buyin-form-currency">
             <h6>Pay</h6>
-            <select name="buy-currency">
-              
+            <select name="buy-currency" id="curlist">
+          
               <option value="USD">USD</option>
               <option value="NTD">NTD</option>
             </select>
-            <input type="number" value="1451.8">
+            <input type="number" id="payCurr" value="">
           </div>  
 
           </form>
@@ -118,19 +122,19 @@
                 <p>Wallet Balance: $ 15,204</p>
               </div>
               <div class="payopt-price">
-                <p>$ 1,452.1</p>
-                <p>(fee: $ 0.5)</p>
+                <p class="payNum">$ 1,452.1</p>
+                <p class="walletFee">(fee: $ 0.5)</p>
             </button>
 
             <button class="payopt-wallet">
               <img src="img/bank.svg" alt="">
               <div class="payopt-type">
-                <p>Bank Transfer</p>
+                <p >Bank Transfer</p>
                 <p>Max: $ 9,000</p>
               </div>
               <div class="payopt-price">
-                <p>$ 1,462.1</p>
-                <p>(fee: $ 10.3)</p>
+                <p class="payNum">$ 1,462.1</p>
+                <p class="bankFee">(fee: $ 10)</p>
             </button>
 
             <button class="payopt-wallet">
@@ -140,8 +144,8 @@
                 <p>Max: $ 3,000</p>
               </div>
               <div class="payopt-price">
-                <p>$ 1,474.1</p>
-                <p>(fee: $ 23.1)</p>
+                <p class="payNum">$ 1,474.1</p>
+                <p class="cardFee"> (fee: $ 20)</p>
             </button>
 
             <button class="payopt-con" type="submit" onclick="window.location.href='Exchange-Order.html'">
@@ -208,6 +212,8 @@
 
 </footer>
 
+
+<script src="./js/trade-buy.js"></script>
 <script src="./js/index.js"></script>
 </body>
 
