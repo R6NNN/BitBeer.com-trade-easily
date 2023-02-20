@@ -216,6 +216,7 @@
     /* width: 100%; */
 
     height: auto;
+    margin-top: 60px;
   }
 
   .swiper {
@@ -224,6 +225,7 @@
     min-width: 200px;
     max-width: 428px;
     margin-bottom: 20px;
+    display: none;
   }
 
   .swiper-slide {
@@ -247,7 +249,7 @@
     justify-content: center;
     margin-bottom: 0;
 
-
+    padding-top: 20px;
     max-width: 428ox;
   }
 
@@ -1313,10 +1315,15 @@
 
   /* ---faq-pop--- */
 
+  .pop-bg{
+    display: none;
+  }
+
   .pop-sec {
     width: auto;
     height: 80%;
     margin: 50px 10px 100px;
+    /* display: none; */
 
   }
 

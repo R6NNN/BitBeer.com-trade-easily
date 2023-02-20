@@ -1779,6 +1779,7 @@ input[type="search"]:focus {
   font-size: 20px;
   color:#ffffff;
   z-index: 3;
+  display: none;
 }
 
 
@@ -1792,6 +1793,7 @@ input[type="search"]:focus {
   overflow-y:scroll;
   position: relative;
   padding-bottom: 30px;
+  
 }
 
 .pop-sec>i{
