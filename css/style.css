@@ -1779,7 +1779,6 @@ input[type="search"]:focus {
   font-size: 20px;
   color:#ffffff;
   z-index: 3;
-  display: none;
 }
 
 

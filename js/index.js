@@ -76,6 +76,7 @@ el2.addEventListener('click', function(e) {
   
 // --------  placeholder  匯率顯示(not yet)--------
 
+ //FIXME: 修正會與其他欄位打架的問題
 // fromCrypto.addEventListener("change",function(){
 //   qBuycurrNum.setAttribute("placeholder",(rateCrypto[fromCrypto.value]+ " USD "))
 // });
@@ -87,7 +88,7 @@ el2.addEventListener('click', function(e) {
 
  //FIXME: 整理function
 
- //FIXME: 四捨五入的小數換算？
+ 
 
 
   qBuycryptoNum.addEventListener("change", function(total){

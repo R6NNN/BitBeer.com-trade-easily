@@ -7,6 +7,7 @@ let btn2 = document.querySelector("#faq-sec");
 let faqPop = document.querySelector("#faq-pop");
 let faqOff = document.getElementById("faq-sec-off");
 
+
 btn2.addEventListener("click", function () {
 
   faqPop.style.display = "block";
